@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Praise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Ephesis&family=Praise&display=swap');
+
+.greeting-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  font-family: 'Ephesis'; 
+}  
+
+p {
+  font-family: 'Charm';
+  color: #1201ff;
+
+}
+
+h1 {
+  color: rgb(90, 143, 249);
+  text-shadow: 
+    -1px -1px 0 #1201ff,
+     1px -1px 0 #1201ff,
+    -1px  1px 0 #1201ff,
+     1px  1px 0 #1201ff,
+     0px -1px 0 #1201ff,
+     0px  1px 0 #1201ff,
+    -1px  0px 0 #1201ff,
+     1px  0px 0 #1201ff;
+}
+
+
+.text-input-container {
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+}
+
+#count-area {
+  width: 350px;
+  height: 250px;
+  border-width: 2px;
+  border-radius: 0.5rem;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  font-size: 20px;
+}
+
+.result-container p {
+  margin: 0.1rem auto;
+}
+
+body {
+  background-color: rgb(254, 175, 237);
+}
