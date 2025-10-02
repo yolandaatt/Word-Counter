@@ -12,9 +12,46 @@
 
 p {
   font-family: 'Charm';
-  color: #1201ff;
-
+  color:  rgb(254, 175, 237);
+  text-shadow: 
+    -1px -1px 0 #1201ff,
+     1px -1px 0 #1201ff,
+    -1px  1px 0 #1201ff,
+     1px  1px 0 #1201ff,
+     0px -1px 0 #1201ff,
+     0px  1px 0 #1201ff,
+    -1px  0px 0 #1201ff,
+     1px  0px 0 #1201ff;
+  background-color:rgb(90, 143, 249);
+  border-radius: 20px;
+  border: 1px solid #1201ff;
+  width: 175px;
+  text-align: center;
 }
+
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color:  rgb(90, 143, 249);
+  color:rgb(254, 175, 237);
+  font-family: 'Charm';
+  text-shadow: 
+    -1px -1px 0 #1201ff,
+     1px -1px 0 #1201ff,
+    -1px  1px 0 #1201ff,
+     1px  1px 0 #1201ff,
+     0px -1px 0 #1201ff,
+     0px  1px 0 #1201ff,
+    -1px  0px 0 #1201ff,
+     1px  0px 0 #1201ff;
+  border: 1px solid #1201ff;
+  border-radius: 20px;
+}
+
 
 h1 {
   color: rgb(90, 143, 249);
