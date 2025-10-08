@@ -1,98 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Praise&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Ephesis&family=Praise&display=swap');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
 
 .greeting-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 20vh;
-  font-family: 'Ephesis'; 
-}  
-
-p {
-  font-family: 'Charm';
-  color:  rgb(254, 175, 237);
-  text-shadow: 
-    -1px -1px 0 #1201ff,
-     1px -1px 0 #1201ff,
-    -1px  1px 0 #1201ff,
-     1px  1px 0 #1201ff,
-     0px -1px 0 #1201ff,
-     0px  1px 0 #1201ff,
-    -1px  0px 0 #1201ff,
-     1px  0px 0 #1201ff;
-  background-color:rgb(90, 143, 249);
-  border-radius: 20px;
-  border: 1px solid #1201ff;
-  width: 175px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-
-.button {
-  display: flex;
-  justify-content: center;
+.greeting-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4b0082;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 1px;
 }
-
-button {
-  background-color:  rgb(90, 143, 249);
-  color:rgb(254, 175, 237);
-  font-family: 'Charm';
-  text-shadow: 
-    -1px -1px 0 #1201ff,
-     1px -1px 0 #1201ff,
-    -1px  1px 0 #1201ff,
-     1px  1px 0 #1201ff,
-     0px -1px 0 #1201ff,
-     0px  1px 0 #1201ff,
-    -1px  0px 0 #1201ff,
-     1px  0px 0 #1201ff;
-  border: 1px solid #1201ff;
-  border-radius: 20px;
-}
-
-
-h1 {
-  color: rgb(90, 143, 249);
-  text-shadow: 
-    -1px -1px 0 #1201ff,
-     1px -1px 0 #1201ff,
-    -1px  1px 0 #1201ff,
-     1px  1px 0 #1201ff,
-     0px -1px 0 #1201ff,
-     0px  1px 0 #1201ff,
-    -1px  0px 0 #1201ff,
-     1px  0px 0 #1201ff;
-}
-
 
 .text-input-container {
   display: flex;
   justify-content: center;
-  min-height: 20vh;
 }
 
-#count-area {
-  width: 350px;
-  height: 250px;
-  border-width: 2px;
-  border-radius: 0.5rem;
+textarea {
+  width: 90%;
+  max-width: 500px;
+  height: 180px;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 1rem;
+  resize: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255 ,0.8);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #6a11cb, 0 0 20px #2575fc;
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.25);
 }
 
 .result-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 20vh;
-  font-size: 20px;
+  margin-top: 25px;
+  gap: 10px;
 }
 
 .result-container p {
-  margin: 0.1rem auto;
+  background: rgba(255, 255, 255 ,0.85);
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #4b0082;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all o.3s ease;
 }
 
-body {
-  background-color: rgb(254, 175, 237);
+.result-container p:hover {
+  transform: scale(1.05);
 }
